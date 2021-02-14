@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "prettier-plugin-java": "1.0.1"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "printWidth": 120,
+    "useTabs": false,
+    "tabWidth": 4
+  }
+}

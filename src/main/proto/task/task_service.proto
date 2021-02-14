@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package com.example.demo.task;
+
+option java_multiple_files = true;
+
+message Task {
+  string name = 1;
+  int32 id = 2;
+  string user_id = 3;
+  string email = 4;
+}
+
+message SaveTaskRequest {
+  string user_id = 1;
+  int32 task_id = 2;
+  Task task = 3;
+}
+
+service TaskService {
+  rpc SaveTask(SaveTaskRequest) returns (Task);
+}
